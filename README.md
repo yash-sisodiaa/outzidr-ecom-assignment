@@ -86,11 +86,14 @@ cd backend
 npm install
 
 Create .env:
-textPORT=5000
-MONGO_URI=mongodb://localhost:27017/multi_tenant_ecom  # or Atlas URI
-JWT_SECRET=your_super_long_random_secret_for_access
-JWT_REFRESH_SECRET=another_different_super_long_random_secret
-NODE_ENV=development
+
+PORT=5000
+MONGO_URI=mongodb+srv://yashsisodia5062_db_user:jxXg6c8NzHgAWwRr@cluster0.evkxsqi.mongodb.net/?appName=Cluster0
+JWT_SECRET=your_very_long_random_secret_for_access_token
+JWT_REFRESH_SECRET=another_different_very_long_random_secret_for_refresh
+FRONTEND_URL=http://localhost:5173
+
+
 Start backend:
 Bashnpm run dev
 Frontend Setup
